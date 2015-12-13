@@ -3,9 +3,9 @@ angular.module('main', [
   'ionic',
   'ngCordova',
   'ui.router',
-  // TODO: load other modules selected during generation
+  'pascalprecht.github-adapter'
 ])
-.config(function ($stateProvider, $urlRouterProvider) {
+.config(function ($stateProvider, $urlRouterProvider, $githubProvider) {
 
   // ROUTING with ui.router
   $urlRouterProvider.otherwise('/main/list');
