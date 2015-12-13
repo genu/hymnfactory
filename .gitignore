@@ -27,3 +27,4 @@
 *.sublime-workspace
 server/node_modules
 server/npm-debug.log
+server/environments.js
