@@ -25,3 +25,4 @@
 .idea
 *.sublime-project
 *.sublime-workspace
+server/node_modules
