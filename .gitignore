@@ -22,5 +22,6 @@
 /www/**
 
 # IDE
+.idea
 *.sublime-project
 *.sublime-workspace
