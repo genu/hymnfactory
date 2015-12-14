@@ -3,6 +3,9 @@
   "env": {
     "node": true
   },
+  "globals": {
+    "_": true
+  },
   "rules": {
     // overrides from 'recommended'
     "comma-dangle": 0,
