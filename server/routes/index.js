@@ -12,7 +12,7 @@ router.get('/songs', function (req, res) {
     repo: "hymnfactory",
     path: "db"
   }, function (err, songs) {
-    res.send(songs);
+    res.json(songs);
   });
 });
 
@@ -23,7 +23,7 @@ router.get('/song/:name', function (req, res) {
     repo: "hymnfactory",
     path: "db/" + req.params.name
   }, function (err, song) {
-    res.send(song);
+    res.json(song);
   })
 });
 
