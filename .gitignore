@@ -28,3 +28,4 @@
 server/node_modules
 server/npm-debug.log
 server/environments.js
+app/main/constants/config-const.js
