@@ -16,8 +16,7 @@ router.get('/songs', function (req, res) {
   });
 });
 
-router.get('/song/:name', function (req, res) {
-  console.log(req.params.name);
+router.get('/songs/:name', function (req, res) {
   github.repos.getContent({
     user: "genu",
     repo: "hymnfactory",
