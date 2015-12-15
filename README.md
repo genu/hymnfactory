@@ -1,7 +1,7 @@
 # Hymn Factory
 This project was generated with Generator-M-Ionic v1.4.1. For more info visit the [repository](https://github.com/mwaylabs/generator-m-ionic) or check out the README below.
 
-![Screenshot](http://i.imgur.com/Q6saiR7.png)
+![Screenshot](http://i.imgur.com/Q6saiR7.png =100)
 
 ## Why its awesome
 This is a community maintained project. Built on top of Yeoman, Gulp, Bower, AngularJS, Ionic & of course Cordova.
