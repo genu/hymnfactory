@@ -1,0 +1,19 @@
+<ion-view view-title="Settings">
+  <ion-content class="padding">
+    <ion-list>
+      <ion-item class="item item-divider">Offline Data</ion-item>
+      <ion-item class="item item-button-right">
+        Song Cache
+        <button class="button button-clear button-assertive" ng-click="settings.clearCache()">Clear</button>
+      </ion-item>
+      <ion-item class="item item-divider">Environment variables:</ion-item>
+      <ion-item class="item item-text-wrap">
+        <pre>{{ctrl.ENV | json}}</pre>
+      </ion-item>
+      <ion-item class="item item-divider">Build variables:</ion-item>
+      <ion-item class="item item-text-wrap">
+        <pre>{{ctrl.BUILD | json}}</pre>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

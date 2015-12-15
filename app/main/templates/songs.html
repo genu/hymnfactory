@@ -1,0 +1,24 @@
+<ion-view view-title="Songs">
+  <div class="bar bar-subheader item-input-inset">
+    <label class="item-input-wrapper textbox-search">
+      <i class="icon ion-ios-search placeholder-icon"></i>
+      <input type="search" placeholder="Search hymns">
+    </label>
+  </div>
+  <ion-content class="has-subheader">
+    <ion-list>
+      <ion-item collection-repeat="song in songs.data" )
+                class="item-remove-animate item-avatar item-icon-right"
+                type="item-text-wrap"
+                ui-sref="main.song({id: song.id})">
+        <img src="main/assets/images/yo@2x.png">
+
+        <h2>{{song.doc.name | songName}}</h2>
+
+        <p>Learn more...</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

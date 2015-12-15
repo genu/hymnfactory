@@ -49,16 +49,23 @@
     <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
     <script src="bower_components/localforage/dist/localforage.js"></script>
     <script src="bower_components/angular-localForage/dist/angular-localForage.js"></script>
-    <script src="bower_components/github/github.js"></script>
-    <script src="bower_components/angular-github-adapter/angular-github-adapter.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
+    <script src="bower_components/angular-utf8-base64/angular-utf8-base64.js"></script>
+    <script src="bower_components/pouchdb/dist/pouchdb.js"></script>
+    <script src="bower_components/angular-pouchdb/angular-pouchdb.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js scripts/app.js -->
     <!-- inject:js -->
     <script src="main/main.js"></script>
-    <script src="main/services/server.service.js"></script>
     <script src="main/services/main-serv.js"></script>
+    <script src="main/services/db.service.js"></script>
+    <script src="main/services/api.service.js"></script>
+    <script src="main/filters/songName.filter.js"></script>
+    <script src="main/controllers/songs.controller.js"></script>
+    <script src="main/controllers/song.controller.js"></script>
+    <script src="main/controllers/settings.controller.js"></script>
     <script src="main/controllers/menu-ctrl.js"></script>
     <script src="main/controllers/debug-ctrl.js"></script>
     <script src="main/constants/config-const.js"></script>

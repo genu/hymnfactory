@@ -1,47 +1,61 @@
 'use strict';
-angular.module('main', [
-  'ionic',
-  'ngCordova',
-  'ui.router',
-  'pascalprecht.github-adapter'
-])
-.config(function ($stateProvider, $urlRouterProvider, $githubProvider) {
+angular.module('main', ['ionic', 'ngCordova', 'ui.router', 'ab-base64', 'pouchdb'
+  ])
+  .run(function (API, DB) {
+  }).config(function ($stateProvider, $urlRouterProvider) {
 
-  // ROUTING with ui.router
-  $urlRouterProvider.otherwise('/main/list');
+  $urlRouterProvider.otherwise('/main/songs');
   $stateProvider
-    // this state is placed in the <ion-nav-view> in the index.html
     .state('main', {
       url: '/main',
       abstract: true,
       templateUrl: 'main/templates/menu.html',
       controller: 'MenuCtrl as menu'
     })
-      .state('main.list', {
-        url: '/list',
-        views: {
-          'pageContent': {
-            templateUrl: 'main/templates/list.html',
-            // controller: '<someCtrl> as ctrl'
+    .state('main.songs', {
+      url: '/songs',
+      views: {
+        'pageContent': {
+          templateUrl: 'main/templates/songs.html',
+          controller: 'SongsCtrl as songs',
+          resolve: {
+            songs: function (DB) {
+              return DB.getSongs({include_docs: true});
+            }
           }
         }
-      })
-      .state('main.listDetail', {
-        url: '/list/detail',
-        views: {
-          'pageContent': {
-            templateUrl: 'main/templates/list-detail.html',
-            // controller: '<someCtrl> as ctrl'
+      }
+    })
+    .state('main.song', {
+      url: '/songs/:id',
+      views: {
+        'pageContent': {
+          templateUrl: 'main/templates/song.html',
+          controller: 'SongCtrl as song',
+          resolve: {
+            song: function (DB, $stateParams) {
+              return DB.getSong($stateParams.id);
+            }
           }
         }
-      })
-      .state('main.debug', {
-        url: '/debug',
-        views: {
-          'pageContent': {
-            templateUrl: 'main/templates/debug.html',
-            controller: 'DebugCtrl as ctrl'
-          }
+      }
+    })
+    .state('main.settings', {
+      url: '/settings',
+      views: {
+        'pageContent': {
+          templateUrl: 'main/templates/settings.html',
+          controller: 'SettingsCtrl as settings'
         }
-      });
+      }
+    })
+    .state('main.debug', {
+      url: '/debug',
+      views: {
+        'pageContent': {
+          templateUrl: 'main/templates/debug.html',
+          controller: 'DebugCtrl as ctrl'
+        }
+      }
+    });
 });
