@@ -1,6 +1,4 @@
 # Hymn Factory
-This project was generated with Generator-M-Ionic v1.4.1. For more info visit the [repository](https://github.com/mwaylabs/generator-m-ionic) or check out the README below.
-
 <img src="screenshot.png" width=300"> &nbsp;
 <img src="screenshot_2.png" width=300">
 
