@@ -4,30 +4,36 @@ version: 1
 ---
 See the destined day arise!
 See a willing sacrifice!
-Jesus, to redeem our loss,
-Hangs upon the shameful cross.
+Jesus, to redeem our loss, 
+hangs upon the shameful cross;
 
-Jesus, who but Thou had borne,
-Lifted on that tree of scorn,
-Every pang and bitter throe,
-Finishing Thy life of woe?
 
-Who but Thou had dared to drain,
-Steeped in gall, the cup of pain,
-And with tender body bear
-Thorns, and nails, and piercing spear?
+Jesus, who but You could bear 
+wrath so great and justice fair?
+Every pang and bitter throe, 
+finishing your life of woe?
 
-Thence the cleansing water flowed,
-Mingled from Thy side with blood;
-Sign to all attesting eyes
-Of the finished sacrifice.
+Hallelujah! Hallelujah! 
+Lamb of God for sinners slain!
+Hallelujah! Hallelujah! 
+Jesus Christ, we praise your name!
 
-Holy Jesus, grant us peace
-In that sacrifice to place
-All our trust for life renewed,
-Pardoned sin and promised good.
+Who but Christ had dared to drain, 
+steeped in gall, the cup of pain,
+And with tender body bear thorns, 
+and nails, and piercing spear?
 
-Grant us grace to sing to Thee,
-In the Trinal Unity,
-Ever with the sons of light,
-Blessing, honor, glory, might.
+Slain for us, the water flowed, 
+mingled from your side with blood;
+Sign to all attesting eyes 
+of the finished sacrifice.
+
+Holy Jesus, grant us grace 
+in that sacrifice to place
+All our trust for life renewed, 
+pardoned sin, and promised good.
+
+Grant us grace to sing your praise, 
+‘round your throne through endless days,
+Ever with the sons of light: 
+“Blessing, honor, glory, might!”
