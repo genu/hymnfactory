@@ -8,7 +8,10 @@
     <h3>{{song.meta.title}}</h3>
     <div id="content">
       <span class="line" ng-repeat="line in song.content track by $index">
-        {{line}}
+        <div ng-switch="line.length">
+          <br ng-switch-when="0"/>
+          <span ng-switch-default>{{line}}</span>
+        </div>
       </span>
     </div>
   </ion-content>
