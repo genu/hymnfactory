@@ -1,14 +1,21 @@
 'use strict';
 
 angular.module('main')
-  .controller('SongCtrl', function (base64, song) {
-    var lines = base64.decode(song.content).split('\n');
+  .controller('SongCtrl', function (DB, base64, song) {
+    var lines, vm;
 
+    vm = this;
+    lines = base64.decode(song.content).split('\n');
+
+    this.data = song;
+    this.isFavorite = _.isUndefined(song.favorite) ? false : song.favorite;
     this.meta = getMeta(lines);
     this.content = lines.slice(4, lines.length);
 
     this.favorite = function (song) {
-      song.isFavorite = !song.isFavorite;
+      DB.toggleSongFavorite(song._id, !song.isFavorite).then(function () {
+        vm.isFavorite = !vm.isFavorite;
+      })
     };
 
     function getMeta(lines) {

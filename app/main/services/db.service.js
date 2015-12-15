@@ -32,6 +32,8 @@ angular.module('main').service('DB', function ($q, $rootScope, pouchDB, API) {
       } else {
         deferred.resolve(docs);
       }
+    }).catch(function (err) {
+      debugger;
     });
 
     return deferred.promise;
@@ -57,12 +59,36 @@ angular.module('main').service('DB', function ($q, $rootScope, pouchDB, API) {
     return deferred.promise;
   };
 
-  this.updateSongContent = function (document) {
-    return db.put(document).catch(function (err) {
-      debugger;
+  this.findFavorites = function () {
+    var deffered = $q.defer();
+
+    db.query(function (doc, emit) {
+      emit(doc.favorite);
+    }, {key: true, include_docs: true}).then(function (favorites) {
+      deffered.resolve(favorites);
     });
+
+    return deffered.promise;
   };
 
+  this.toggleSongFavorite = function (id, value) {
+    var deferred = $q.defer();
+
+    db.get(id).then(function (doc) {
+      if (_.isUndefined(doc.favorite)) {
+        doc.favorite = value;
+      } else {
+        doc.favorite = !doc.favorite;
+      }
+
+      db.put(doc).then(function () {
+        deferred.resolve(doc);
+      })
+    });
+
+    return deferred.promise;
+
+  };
   this.addSong = function (song) {
     // Remove _* fields (couchDB restriction)
     delete song._links;

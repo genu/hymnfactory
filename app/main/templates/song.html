@@ -1,6 +1,6 @@
 <ion-view view-title="{{song.meta.title}}">
   <ion-nav-buttons side="secondary">
-    <a ng-click="song.favorite(song)"
+    <a ng-click="song.favorite(song.data)"
        ng-class="{'ion-ios-star-outline': !song.isFavorite, 'ion-ios-star': song.isFavorite}"
        class="button button-clear button-icon icon"></a>
   </ion-nav-buttons>

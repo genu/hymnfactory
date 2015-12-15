@@ -1,5 +1,4 @@
 'use strict';
-angular.module('main')
-  .controller('SongsCtrl', function (API, songs, DB) {
-    this.data = songs.rows;
-  });
+angular.module('main').controller('SongsCtrl', function (songs) {
+  this.data = songs.rows;
+});

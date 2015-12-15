@@ -1,9 +1,8 @@
 'use strict';
 angular.module('main', ['ionic', 'ngCordova', 'ui.router', 'ab-base64', 'pouchdb'
-  ])
-  .run(function (API, DB) {
-  }).config(function ($stateProvider, $urlRouterProvider) {
-
+]).run(function (API, DB) {
+}).config(function ($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+  $ionicConfigProvider.views.maxCache(0);
   $urlRouterProvider.otherwise('/main/songs');
   $stateProvider
     .state('main', {
@@ -21,6 +20,20 @@ angular.module('main', ['ionic', 'ngCordova', 'ui.router', 'ab-base64', 'pouchdb
           resolve: {
             songs: function (DB) {
               return DB.getSongs({include_docs: true});
+            }
+          }
+        }
+      }
+    })
+    .state('main.favorites', {
+      url: '/favorites',
+      views: {
+        'pageContent': {
+          templateUrl: 'main/templates/songs.html',
+          controller: 'SongsCtrl as songs',
+          resolve: {
+            songs: function (DB) {
+              return DB.findFavorites();
             }
           }
         }
