@@ -1,4 +1,3 @@
- 
 ---
 Title: Speak O Lord 
 ---
