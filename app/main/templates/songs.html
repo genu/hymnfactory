@@ -2,12 +2,12 @@
   <div class="bar bar-subheader item-input-inset">
     <label class="item-input-wrapper textbox-search">
       <i class="icon ion-ios-search placeholder-icon"></i>
-      <input type="search" placeholder="Search hymns">
+      <input type="search" ng-model="songs.filter" placeholder="Search hymns">
     </label>
   </div>
   <ion-content class="has-subheader">
     <ion-list>
-      <ion-item collection-repeat="song in songs.data" )
+      <ion-item collection-repeat="song in songs.data | filter:songs.filter"
                 class="item-remove-animate item-icon-right"
                 type="item-text-wrap"
                 ui-sref="main.song({id: song.id})">
