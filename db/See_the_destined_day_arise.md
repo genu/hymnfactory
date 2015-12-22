@@ -1,9 +1,10 @@
 ---
 Title: See the destined day Arise
+Lang: En
 version: 1
 ---
-See the destined day arise!
-See a willing sacrifice!
+See the d[B#]estined day arise!
+See a willin[E#]g sacrifice!
 Jesus, to redeem our loss, 
 hangs upon the shameful cross;
 

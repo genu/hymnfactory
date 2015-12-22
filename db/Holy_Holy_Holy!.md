@@ -1,6 +1,7 @@
 ---
-Title: Holy, Holy, Holy! Lord God Almighty
-version: 1
+Title: Holy, Holy, Holy!
+Author: Reginald Herber
+Year: 1826
 ---
 Holy, holy, holy! Lord God Almighty! 
 Early in the morning our song shall rise to thee. 
