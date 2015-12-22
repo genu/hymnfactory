@@ -2,7 +2,6 @@
 Title: Blessed Assurance
 Author: Fanny Crosby
 ---
-
 Blessed assurance; Jesus is mine!
 Oh, what a foretaste of glory divine!
 Heir of salvation, purchase of God,
