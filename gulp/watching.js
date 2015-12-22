@@ -10,7 +10,8 @@ var bsInit = function (paths, openOverride) {
   var bsOptions = {
     server: {
       baseDir: paths
-    }
+    },
+    browser: 'google chrome'
   };
   if (options.open === false) {
     bsOptions.open = false;
