@@ -5,14 +5,14 @@
        class="button button-clear button-icon icon"></a>
   </ion-nav-buttons>
   <ion-content class="padding">
-    <h3>{{song.meta.title}}</h3>
-    <div id="content">
-      <span class="line" ng-repeat="line in song.content track by $index">
-        <div ng-switch="line.length">
-          <br ng-switch-when="0"/>
+    <div id="content" style="text-align: center">
+      <genu class="line" ng-repeat="line in song.content track by $index">
+        <div ng-switch="line">
+          <br ng-switch-when=""/>
+          <span ng-switch-when="Refrain:" style="font-weight: bold;">{{line}}</span>
           <span ng-switch-default>{{line}}</span>
         </div>
-      </span>
+      </genu>
     </div>
   </ion-content>
 </ion-view>
