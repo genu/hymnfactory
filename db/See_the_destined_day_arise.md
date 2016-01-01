@@ -1,5 +1,5 @@
 ---
-Title: See the destined day Arise
+Title: See The Destined Day Arise
 Lang: En
 version: 1
 ---
