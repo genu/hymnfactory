@@ -1,6 +1,6 @@
 # Hymn Factory
-![](screenshot.png =300px)
-![](screenshot_2.png =200px)
+![](screenshot.png =300x)
+![](screenshot_2.png =200x)
 
 ## Why its awesome
 This is a community maintained project. Built on top of Yeoman, Gulp, Bower, AngularJS, Ionic & of course Cordova.
