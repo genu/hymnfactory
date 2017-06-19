@@ -1,6 +1,7 @@
 # Hymn Factory
+|   |   |
 |---------|-------|
-| <img src="screenshot.png" width="200">| <img src="screenshot_2.png" width="200">|
+| <img src="screenshot.png" width="300">| <img src="screenshot_2.png" width="300">|
 
 
 
